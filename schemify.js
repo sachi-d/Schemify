@@ -14,7 +14,6 @@ function JSONtoSchema(obj) {
     (function traverse(obj, result) {
         var keys = Object.keys(obj);
         keys.map(function (key) {
-            console.log(key);
             var subject = obj[key];
             var type = typeof subject;
             //if type is object or array
@@ -53,6 +52,5 @@ function JSONtoSchema(obj) {
             }
         });
     })(obj, schema[str]);
-    console.log(schema);
     return schema;
 }
