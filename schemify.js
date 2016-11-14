@@ -8,8 +8,7 @@ function JSONtoSchema(obj) {
         return schema;
 
     }
-    var str = Array.isArray(obj) ?
-        "items" : "properties";
+    var str = Array.isArray(obj) ? "items" : "properties";
     schema[str] = {};
 
     (function traverse(obj, result) {
