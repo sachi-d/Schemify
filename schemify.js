@@ -12,7 +12,6 @@ var Schemify = {
         var objType = typeof obj;
         schema["type"] = objType;
         if (objType !== "object") {
-            schema["properties"] = {};
             return schema;
 
         }
